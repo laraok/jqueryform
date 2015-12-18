@@ -1,0 +1,95 @@
+/* CSS Document */
+/* 清除内外边距 */
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, /* structural elements 结构元素 */
+dl, dt, dd, ul, ol, li, /* list elements 列表元素 */
+pre, /* text formatting elements 文本格式元素 */
+fieldset, lengend, button, input, textarea, /* form elements 表单元素 */
+th, td { /* table elements 表格元素 */
+    margin: 0;
+    padding: 0;
+}
+html,body,div,span,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,form,fieldset,legend,label,img,a,input{ border:none;box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-o-box-sizing:border-box;
+	-ms-box-sizing:border-box;}
+html,body { height:100%; overflow:hidden; overflow-y:auto;}
+div { margin:0 auto;}
+img { border:none; float:none; vertical-align:top;}
+a.underline:hover { text-decoration:underline;}
+a:hover{ cursor:pointer;}
+*html { background-image:url(about:blank); background-attachment:fixed;}
+/**html .TopBg {position:absolute;top:expression(eval(document.documentElement.scrollTop));}*/
+input[type="radio"] { border:0;}
+a:link,a:visited { color:#595757; text-decoration:none;}
+/* 重置列表元素 */
+ul, ol { list-style: none; }
+table { border-collapse:collapse; border-spacing: 0;}
+/* 设置默认字体 */
+body, button, input, select, textarea, p{font:12px/1.5 STxihei,tahoma,arial,"Hiragino Sans GB","Microsoft YaHei"; color:#333;}
+input { /*border:1px #d6d7dc solid;*/ font-size:14px; border:none; height:30px; line-height:30px; outline:0; font-family:STxihei,"microsoft yahei", "黑体", Arial;}
+ul,ol { list-style:none;}
+h1 { font-size:22px; font-weight:500;}
+h2 { font-size:20px; font-weight:500;}
+h3 { font-size:18px; font-weight:500;}
+h4 { font-size:16px; font-weight:500;}
+h5 { font-size:14px; font-weight:500;}
+h6 { font-size:12px; font-weight:500;}
+p { line-height:20px;}
+address, cite, dfn, em, var { font-style: normal; } /* 将斜体扶正 */
+code, kbd, pre, samp, tt { font-family: "Courier New", Courier, monospace; } /* 统一等宽字体 */
+small { font-size: 12px; } /* 微软雅黑最小字体是12号 */
+
+/* -------------------- width --------------------  */
+.MAXwidth { width:100%; min-width:1200px;}
+.widthMAX { width:1200px;}
+.width100{ width:100%;}
+/* -------------------- color --------------------  */
+.Cred { color:red;}
+.Cgrey { color:grey;}
+.Cblue { color:blue;}
+.Cgreen { color:green;}
+/* popup */
+.maskBg { width:100%; height:100%; left:0; top:0; position:fixed; z-index:90; background-color:#000; filter:alpha(opacity=50); -moz-opacity:0.5; -khtml-opacity:0.5; opacity:0.5; display:none;}
+*html .maskBg { position:absolute; top:expression(eval(document.documentElement.scrollTop));/*ie6.0 fixed*/}
+.maskCont { position:fixed; left:0; top:0; width:100%; height:100%; overflow:auto; z-index:96; text-align:center; vertical-align:middle; display:none;}
+*html .maskCont { position:absolute; top:expression(eval(document.documentElement.scrollTop));}
+.maskCont span.maskSpan { height:100%; width:0; overflow:hidden; display:inline-block; vertical-align:middle;}
+.maskCont .maskContent { max-width:100%; max-height:100%; position:relative; display:inline-block; vertical-align:middle; text-align:left;}
+/* -------------------- Basic Settings -------------------- */
+.FloatLeft { float:left;}
+.FloatRight { float:right;}
+.txtCenter { text-align:center;}
+.txtLeft { text-align:left;}
+.txtRight { text-align:right;}
+.OverHid { overflow:hidden;}
+.clear { display:block; width:100%; clear:both; overflow:hidden; height:0px; }
+.ellipsis { display:block; overflow:hidden; text-align:left; -o-text-overflow:ellipsis; text-overflow:ellipsis; white-space:nowrap;}
+
+.hide {display:none;}
+
+/* CSS Document */
+.dave-header{ position:fixed; width:100%; height:40px; top:0; left:0; background-color:#41c3a7;}
+.dave-header p{ padding:0 10px; color:#fff; line-height:40px; font-size:14px;}
+.dave-content{ position:absolute; width:100%; top:40px; bottom:0; left:0; overflow:hidden; overflow-y:auto;}
+.dave-conholder{ margin:0 10px 40px 10px;}
+.dave-agmt{ height:30px;}
+.dave-agmt .dave-agmt-span{ line-height:30px; color:#999; font-size:13px;}
+.dave-inpinfo{ margin-bottom:30px;}
+.dave-inpinfo .dave-inpinfo-select,.dave-inpinfo .dave-inpinfo-input,.dave-inpinfo .dave-inpinfo-textarea,.dave-phone{ width:100%; height:32px;  border:1px #ccc solid; -webkit-border-radius:6px; border-radius:6px; font-size:13px;color:darkgray;margin-top: 10px;}
+.dave-inpinfo .dave-inpinfo-textarea{ height:150px; resize:none;}
+.dave-subbtn{ width:100%; height:40px; background-color:#41c3a7; text-align:center; -webkit-border-radius:6px; border-radius:6px;}
+.dave-subbtn input{ width:100%; height:100%; background:none; font-size:14px; line-height:40px; color:#fff;}
+.dave-inpinfo .dave-inpinfo-input,.dave-inpinfo .dave-inpinfo-textarea{ padding:0 5px;}
+.dave-phone .dave-sendvercode{ float:right; height:100%; width:80px; background-color:#ccc; border-top-right-radius:6px; border-bottom-right-radius:6px; -webkit-border-top-right-radius:6px; -webkit-border-bottom-right-radius:6px; text-align:center; line-height:30px; color:#fff; font-size:13px;}
+.dave-phone .dave-inpnumber{ margin-left:5px; margin-right:85px;}
+.dave-phone .dave-inpnumber input{ width:100%; height:100%;}
+.dave-infotype{ width:100%; height:30px; margin-top:5px; line-height:40px; font-size:13px;}
+#dave-unitform label.error{ color:red;}
+.P-bg-primary{background:#f4f4f4}
+.p-label{margin-top:10px;display: block;font-size: 13px;margin-bottom: -10px;}
+.p-margin-top{margin-top: 10px;}
+.p-txt-center{text-align: center}
+.p-relate{position: relative}
+.p-header-icon-return{position: absolute;left: 2%;top:0;height:40px;padding:5px}
+.p-txt-title{margin-left: -10px;padding-left: 10px;font-size: 13px;background:white;color:#999;width:calc(100% + 20px);height: 30px;line-height: 30px;}
